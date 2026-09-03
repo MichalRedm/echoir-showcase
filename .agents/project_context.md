@@ -5,7 +5,7 @@ See [AGENTS.md](../AGENTS.md) at the repository root for the high-level rule rou
 
 ---
 
-## 🔗 Upstream Repository Provenance & Synchronization Tracking
+## Upstream Repository Provenance & Synchronization Tracking
 
 This showcase repository is a curated architectural proxy for the private production repository **`echoir`**. To ensure future updates, new features, and refactorings can be incrementally and autonomously ported, upstream synchronization history is strictly tracked here:
 

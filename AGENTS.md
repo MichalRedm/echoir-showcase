@@ -13,7 +13,7 @@ Welcome to the **echoir-showcase** repository! This file serves as the primary e
 
 ---
 
-## 🚦 Mandatory Rule Routing Matrix
+## Mandatory Rule Routing Matrix
 
 Before writing or modifying any content in this repository, identify your target area and **read the corresponding rule file FIRST**:
 
@@ -27,7 +27,7 @@ Before writing or modifying any content in this repository, identify your target
 
 ---
 
-## 🔄 Operational Phase Gates
+## Operational Phase Gates
 
 Every task in this repository must progress sequentially through these 5 lifecycle gates:
 
@@ -52,7 +52,7 @@ Every task in this repository must progress sequentially through these 5 lifecyc
 
 ---
 
-## ⚙️ Core CLI Tools & Verification
+## Core CLI Tools & Verification
 
 | Purpose | Working Directory | Command / Action |
 | :--- | :--- | :--- |
@@ -63,7 +63,7 @@ Every task in this repository must progress sequentially through these 5 lifecyc
 
 ---
 
-## 🚨 Operational Boundaries & Escalation
+## Operational Boundaries & Escalation
 
 - **Always**:
   - Write documentation in an authentic, senior engineer voice: clean Markdown, direct and concrete language, zero emoji clutter in headings or lists.
@@ -79,7 +79,7 @@ Every task in this repository must progress sequentially through these 5 lifecyc
 
 ---
 
-## 📁 Repository Layout & Navigation Map
+## Repository Layout & Navigation Map
 
 - `AGENTS.md`: Master entry point & rule routing matrix (this file)
 - `README.md`: Public architectural showcase & visual overview
