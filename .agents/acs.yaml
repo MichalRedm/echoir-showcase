@@ -1,0 +1,46 @@
+name: "echoir-showcase"
+version: "1.0"
+description: "Public architectural showcase, engineering case study, and sanitized code sample repository for echoir."
+entrypoint: "../AGENTS.md"
+
+upstream:
+  repository: "MichalRedm/echoir"
+  url: "https://github.com/MichalRedm/echoir"
+  last_synced_commit: "e84987df97478e1143405b99dcb06492ec4d3519"
+  last_synced_date: "2026-09-03T14:47:09+02:00"
+
+layers:
+  rules:
+    - path: "./rules/snippet_standards.md"
+      description: "Standards for sanitizing, formatting, and documenting TypeScript code snippets."
+      trigger_paths:
+        - "snippets/**"
+        - "snippets/**/*.{ts,tsx}"
+    - path: "./rules/documentation_standards.md"
+      description: "Technical writing guidelines, Mermaid diagram invariants, and screenshot presentation."
+      trigger_paths:
+        - "README.md"
+        - "case-studies/**"
+        - "architecture/**"
+        - "assets/**"
+    - path: "./rules/upstream_sync_standards.md"
+      description: "Protocol for tracking diffs against the private echoir repository and maintaining parity."
+      trigger_paths:
+        - ".agents/project_context.md"
+        - ".agents/acs.yaml"
+        - "case-studies/**"
+        - "snippets/**"
+    - path: "./rules/agent_maintenance_standards.md"
+      description: "Proactive self-maintenance triggers and procedure for the .agents/ directory."
+      trigger_paths:
+        - ".agents/**"
+
+  skills:
+    - path: "./skills/sync-from-upstream/SKILL.md"
+      description: "Workflow for inspecting new commits in echoir and updating showcase assets."
+    - path: "./skills/agent-maintenance/SKILL.md"
+      description: "Autonomous self-maintenance loop for keeping showcase documentation aligned."
+
+metadata:
+  primary_agent: "Antigravity"
+  objective: "Showcase enterprise-grade full-stack architecture, clean TypeScript craftsmanship, and real-world engineering problem solving to recruiters and engineering leaders."

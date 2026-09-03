@@ -37,3 +37,15 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# AI Assistant Context Configuration
+.agents/*
+!.agents/acs.yaml
+!.agents/project_context.md
+!.agents/rules/
+!.agents/skills/
+
+# Transient AI memory and session logs
+.agents/archive/
+.agents/memory.md
+
