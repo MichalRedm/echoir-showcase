@@ -31,9 +31,8 @@ The core production codebase for **echoir** is maintained in a private repositor
 The application is deployed and publicly accessible in production:
 
 - **Live URL**: [https://echoir.onrender.com](https://echoir.onrender.com)
-- **Sample Ensemble Join Code**: `rcrGdYPo` (or direct link: [https://echoir.onrender.com/join/rcrGdYPo](https://echoir.onrender.com/join/rcrGdYPo))
 
-Feel free to register a test account, browse the repertoire, listen to voice part recordings, or create your own choir workspace.
+Feel free to register a test account, explore the dashboard, or create your own choir workspace.
 
 > **Note on Free-Tier Hosting**: The backend is hosted on Render's free tier. If the instance has been idle, the initial request may take 30–50 seconds while the container spins up. Subsequent requests run at normal speed.
 
