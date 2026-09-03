@@ -73,16 +73,16 @@ To allow instant onboarding without requiring conductors to manually type every 
 ```mermaid
 flowchart TD
     subgraph Creation["Conductor Generates Invite"]
-        Gen[Crypto Random Bytes Generator] --> Code[8-Character Alphanumeric Code e.g. '7F8A2B9C']
-        Code --> Save[Persist to Choir Document in Mongo]
-        Save --> Link[Generate Shareable Link '/join/7f8a2b9c']
+        Gen["Crypto Random Bytes Generator"] --> Code["8-Character Alphanumeric Code e.g. '7F8A2B9C'"]
+        Code --> Save["Persist to Choir Document in MongoDB"]
+        Save --> Link["Generate Shareable Link '/join/7f8a2b9c'"]
     end
 
     subgraph Redemption["Singer Joins Choir"]
-        UserLink[Click Link or Enter Code] --> Preview[Fetch Public Preview Metadata]
-        Preview --> Confirm[Click 'Join Choir']
-        Confirm --> Mutation[Atomic $addToSet Push to Choir Users]
-        Mutation --> Invalidation[Invalidate ['user', 'me'] & ['choir', id] caches]
+        UserLink["Click Link or Enter Code"] --> Preview["Fetch Public Preview Metadata"]
+        Preview --> Confirm["Click 'Join Choir'"]
+        Confirm --> Mutation["Atomic $addToSet Push to Choir Users"]
+        Mutation --> Invalidation["Invalidate 'user/me' & 'choir/id' query caches"]
     end
 ```
 

@@ -37,15 +37,15 @@ flowchart TD
         Step2{"Longest Prefix Match (songId + '-')?"}
         Step3{"Fallback: Substring before first hyphen"}
         
-        Step1 -- Yes --> Match1[Return songId]
+        Step1 -- Yes --> Match1["Return songId"]
         Step1 -- No --> Step2
-        Step2 -- Yes --> Match2[Return songId]
+        Step2 -- Yes --> Match2["Return songId"]
         Step2 -- No --> Step3
-        Step3 --> Match3[Return candidate ID]
+        Step3 --> Match3["Return candidate ID"]
     end
     
     Extractor --> Step1
-    Match1 --> Load[Load Song Details]
+    Match1 --> Load["Load Song Details"]
     Match2 --> Load
     Match3 --> Load
     
