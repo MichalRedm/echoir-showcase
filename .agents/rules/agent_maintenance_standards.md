@@ -15,6 +15,7 @@ To maintain `.agents/` as the single authoritative Source of Truth, all AI assis
 | **New Case Study Created** | Add entry to rule routing matrix and update case study directory index. | `AGENTS.md`<br>`README.md` |
 | **Screenshots Regenerated** | Update the screenshot inventory table and verify embedded preview paths. | `assets/screenshots/README.md`<br>`README.md` |
 | **Rule or Anti-Pattern Discovered** | Add declarative guardrails and anti-pattern table rows. | Relevant rule in `.agents/rules/` |
+| **Documentation Refinement** | Maintain authentic senior engineering tone: strictly preserve zero-emoji heading policy and ban AI marketing buzzwords. | `README.md`<br>`case-studies/**`<br>`architecture/**` |
 
 ## Standard Maintenance Procedure
 

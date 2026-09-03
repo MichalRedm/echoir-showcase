@@ -20,7 +20,7 @@ Before writing or modifying any content in this repository, identify your target
 | When working on / modifying... | Target Paths / Globs | Mandatory File to Read FIRST | Key Invariants & Pitfalls to Check |
 | :--- | :--- | :--- | :--- |
 | **Sanitized Code Samples** | `snippets/**/*.{ts,tsx}` | [`.agents/rules/snippet_standards.md`](.agents/rules/snippet_standards.md) | • **Strict IP Sanitization**: Zero secrets, proprietary algorithms, or credentials<br>• Zero-`any` TypeScript policy<br>• Standalone, compilable contracts |
-| **Case Studies & Architecture Docs** | `case-studies/**/*.md`<br>`architecture/**/*.md`<br>`README.md` | [`.agents/rules/documentation_standards.md`](.agents/rules/documentation_standards.md) | • **Mermaid Syntax Invariant**: All flowchart node labels MUST be double-quoted (`Node["label"]`)<br>• Relative link integrity (e.g. `[System Architecture](./architecture/system_overview.md)`)<br>• Production-grade architectural prose |
+| **Case Studies & Architecture Docs** | `case-studies/**/*.md`<br>`architecture/**/*.md`<br>`README.md` | [`.agents/rules/documentation_standards.md`](.agents/rules/documentation_standards.md) | • **Authentic Senior Engineer Tone**: Zero decorative emoji clutter in headings or lists; no AI marketing buzzwords<br>• **Mermaid Invariant**: All flowchart node labels MUST be double-quoted (`Node["label"]`)<br>• Relative link integrity |
 | **Visual Media & Screenshots** | `assets/screenshots/**/*.{png,md}` | [`.agents/rules/documentation_standards.md`](.agents/rules/documentation_standards.md) | • Consistent 1920×1080 (2× DPI) desktop & 390×844 (3× DPI) mobile viewports<br>• Realistic, sanitized rehearsal data |
 | **Upstream Sync with `echoir`** | Monorepo root / `.agents/**`<br>`snippets/**`<br>`case-studies/**` | [`.agents/rules/upstream_sync_standards.md`](.agents/rules/upstream_sync_standards.md)<br>[`.agents/skills/sync-from-upstream/SKILL.md`](.agents/skills/sync-from-upstream/SKILL.md) | • Inspect `git log <last-commit>..HEAD` in `echoir`<br>• Sanitize diffs before porting<br>• Update provenance commit hash in `.agents/project_context.md` |
 | **Agent Configuration & Self-Maintenance** | `.agents/**` | [`.agents/rules/agent_maintenance_standards.md`](.agents/rules/agent_maintenance_standards.md)<br>[`.agents/skills/agent-maintenance/SKILL.md`](.agents/skills/agent-maintenance/SKILL.md) | • Keep `trigger_paths` in `acs.yaml` updated<br>• Synchronize tracked commit hash upon every upstream sync |
@@ -40,6 +40,7 @@ Every task in this repository must progress sequentially through these 5 lifecyc
    - If synchronizing changes from `echoir`, read the current tracked commit hash from [`.agents/project_context.md`](.agents/project_context.md).
 2. **Gate 2: Implementation**:
    - Write sanitized code snippets, case studies, or documentation adhering strictly to `.agents/rules/`.
+   - Strictly follow the senior engineer writing style: zero decorative emoji clutter in headings or bullet points, no marketing buzzwords, and plain-spoken technical explanations.
 3. **Gate 3: Integrity Verification**:
    - Verify that all relative Markdown links resolve to real files.
    - Ensure all Mermaid diagrams have quoted labels.
@@ -65,10 +66,13 @@ Every task in this repository must progress sequentially through these 5 lifecyc
 ## 🚨 Operational Boundaries & Escalation
 
 - **Always**:
+  - Write documentation in an authentic, senior engineer voice: clean Markdown, direct and concrete language, zero emoji clutter in headings or lists.
   - Sanitize any code ported from `echoir`: remove credentials, internal API keys, production endpoints, and proprietary algorithms.
   - Wrap all Mermaid flowchart node labels in double quotes to prevent GitHub Markdown parser errors.
   - Update the tracked upstream commit hash in `.agents/project_context.md` whenever synchronizing with `echoir`.
 - **Never**:
+  - Never use decorative emoji prefixes in headings (`# 🎶`) or bullet lists (`- 🎼`).
+  - Never use hollow AI marketing buzzwords (*"pioneered"*, *"testament to"*, *"stark dilemma"*, *"holistic"*).
   - Never commit raw un-sanitized source files directly from `echoir`.
   - Never introduce unquoted bracket expressions `[ ... ]` inside Mermaid node identifiers or labels.
   - Never leave placeholder `TODO` or `WIP` tags in public case studies.
