@@ -1,24 +1,25 @@
 # Visual Showcase & Screenshot Catalog
 
-This directory hosts high-resolution UI captures and visual feature walkthroughs for **echoir**.
+This directory hosts high-resolution UI captures and visual feature walkthroughs for **echoir**, captured at 1920×1080 (Desktop) and 390×844 (Mobile) directly from an active production rehearsal ensemble (*Chór Kameralny Harmonia Vocalis*).
 
 ---
 
-## 📸 Planned Automated Screenshot Inventory
+## 📸 Automated Screenshot Inventory
 
-Once the exemplary test choir and credentials are configured, the automated Playwright capture script will generate screenshots for the following key viewports and user flows:
-
-| Filename | Viewport | User Flow / Feature |
-| :--- | :--- | :--- |
-| `01-repertoire-dual-pane.png` | Desktop (1920x1080) | Dual-pane songbook browser with full-text search, multi-tag filters, and instant score preview |
-| `02-sheet-reader-performance.png` | Desktop & Tablet | Score sheet reader in performance mode with high-contrast score rendering |
-| `03-voice-parts-audio-player.png` | Desktop (1920x1080) | Multi-track stem audio player with Soprano, Alto, Tenor, and Bass solo/mute controls |
-| `04-programme-builder-dnd.png` | Desktop (1920x1080) | Drag-and-drop concert setlist organizer with automatic duration calculation |
-| `05-multi-choir-switcher.png` | Desktop & Mobile | Choir workspace context switcher and member role badges |
-| `06-join-choir-onboarding.png` | Desktop & Mobile | Public invitation link landing page and join code redemption modal |
-| `07-mobile-responsive-shell.png` | Mobile (390x844) | Compact mobile bottom navigation, song list, and quick audio controls |
+| Asset | Preview | Feature & User Flow | Key Highlights |
+| :--- | :---: | :--- | :--- |
+| [`01_repertoire_dual_pane.png`](./01_repertoire_dual_pane.png) | [View](./01_repertoire_dual_pane.png) | **Dual-Pane Repertoire Browser** | 3-column desktop layout, quick search, multi-category tag badges (`SATB`, `Romantyzm`, `Sakralne`), score rendering, voice part badges, and draft programme drawer. |
+| [`02_voice_parts_player.png`](./02_voice_parts_player.png) | [View](./02_voice_parts_player.png) | **Multi-Track Voice Part Audio Stems** | Dedicated stem playback pills (`sopran`, `alt`, `tenor`, `bas`, `tutti`), active playback state, duration timeline, and rehearsal scrubbing. |
+| [`03_sheet_reader_performance.png`](./03_sheet_reader_performance.png) | [View](./03_sheet_reader_performance.png) | **Performance Sheet Music Reader** | Distraction-free full-screen notation viewer optimized for performance stands and tablets. |
+| [`04_programmes_overview.png`](./04_programmes_overview.png) | [View](./04_programmes_overview.png) | **Concert Programmes Catalog** | Published concert setlists (*"Wieczór Pieśni Romantycznych"*, *"Koncert Muzyki Sakralnej"*), numbered song sequences, and instant songbook navigation. |
+| [`05_programme_builder_dnd.png`](./05_programme_builder_dnd.png) | [View](./05_programme_builder_dnd.png) | **Interactive Programme Builder** | Drag-and-drop sortable setlist builder powered by `@dnd-kit`, draft persistence, and live repertoire drawer. |
+| [`06_choir_dashboard.png`](./06_choir_dashboard.png) | [View](./06_choir_dashboard.png) | **Choir Workspace Dashboard** | Ensemble identity, summary metrics (*"Pieśni 8"*, *"Programy 2"*, *"Członkowie 1"*), cryptographic invite token sharing, and roster management. |
+| [`07_score_ingestion_modal.png`](./07_score_ingestion_modal.png) | [View](./07_score_ingestion_modal.png) | **Score Ingestion & Tagging Modal** | Client-side PDF ingestion, multi-page splitting via PDF.js, and categorical tagging interface. |
+| [`08_invitation_landing_page.png`](./08_invitation_landing_page.png) | [View](./08_invitation_landing_page.png) | **Public Invitation Landing Page** | Frictionless cryptographic onboarding flow allowing members to inspect choir details and join with one click. |
+| [`09_mobile_responsive_shell.png`](./09_mobile_responsive_shell.png) | [View](./09_mobile_responsive_shell.png) | **Mobile Responsive Shell** | Mobile navigation dock, tactile song cards with tag pills, and thumb-friendly floating actions (390×844). |
 
 ---
 
 ## 🛠️ Automated Capture Protocol
-Automated capture is coordinated via Playwright headless browser automation, capturing full-fidelity Retina/2x DPI PNGs with consistent dark mode styling and sanitized demo data.
+
+All screenshots are autonomously captured using **Playwright** (`playwright-cli run-code`) with deterministic network idle states, loaded WebFonts (`Plus Jakarta Sans`), and calibrated device viewports.

@@ -136,12 +136,51 @@ Curated, production-grade code extracts demonstrating coding standards, zero-`an
 
 ## 🖼️ Visual Walkthroughs & UI Showcase
 
-*(Detailed high-resolution screenshots and workflow GIF recordings are being cataloged in [`/assets/screenshots/`](./assets/screenshots/).)*
+Explore the production application interface running with sample repertoire and ensemble data for *Chór Kameralny Harmonia Vocalis*:
 
-- **Dual-Pane Repertoire Browser**: Rapid searching, multi-criteria filtering by label/voicing, and instant PDF preview.
-- **Multi-Track Voice Part Audio Player**: Isolated stem audio tracks for Soprano, Alto, Tenor, and Bass with variable speed controls.
-- **Concert Programme Builder**: Drag-and-drop setlist reordering with automatic timing calculations.
-- **Multi-Choir Hub**: Switch effortlessly between community choirs, church ensembles, and chamber groups.
+### 1. Dual-Pane Repertoire Browser & Score Preview
+> Rapid full-text search, multi-category tag filtering (`SATB`, `Romantyzm`, `Sakralne`), score sheet thumbnail rendering, and live draft programme drawer.
+
+<p align="center">
+  <img src="./assets/screenshots/01_repertoire_dual_pane.png" alt="Dual-Pane Repertoire Browser" width="100%" />
+</p>
+
+### 2. Multi-Track Voice Part Audio Rehearsal Player
+> Dedicated isolated stem tracks for Soprano, Alto, Tenor, Bass, and Tutti with real-time waveform scrubbing and playback speed controls.
+
+<p align="center">
+  <img src="./assets/screenshots/02_voice_parts_player.png" alt="Multi-Track Voice Part Audio Player" width="100%" />
+</p>
+
+### 3. Full-Screen Sheet Reader & Performance Mode
+> Clean, distraction-free score notation rendering designed for choir folders, rehearsal stands, and performance tablets.
+
+<p align="center">
+  <img src="./assets/screenshots/03_sheet_reader_performance.png" alt="Performance Sheet Music Reader" width="100%" />
+</p>
+
+### 4. Concert Programme Catalog & Setlist Organization
+> Curated performance setlists with numbered song sequencing, estimated timings, and one-click songbook loading.
+
+<p align="center">
+  <img src="./assets/screenshots/04_programmes_overview.png" alt="Concert Programmes Overview" width="100%" />
+</p>
+
+### 5. Multi-Tenant Choir Workspace & Dashboard
+> Ensemble management hub showcasing membership metrics, cryptographic invitation tokens, and member roster.
+
+<p align="center">
+  <img src="./assets/screenshots/06_choir_dashboard.png" alt="Choir Workspace Dashboard" width="100%" />
+</p>
+
+### 6. Mobile Responsive Shell
+> Responsive mobile design with bottom navigation dock, compact repertoire cards, and thumb-accessible quick actions.
+
+<p align="center">
+  <img src="./assets/screenshots/09_mobile_responsive_shell.png" alt="Mobile Responsive Shell" width="350px" />
+</p>
+
+*(For the complete screenshot inventory and metadata, see the [Screenshot Catalog](./assets/screenshots/README.md).)*
 
 ---
 
