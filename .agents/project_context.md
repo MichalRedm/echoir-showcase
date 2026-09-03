@@ -47,7 +47,7 @@ Provide a compelling, professional architectural portfolio for technical recruit
 - [x] 9 high-resolution Retina screenshots (8 desktop @ 1920×1080 + 1 mobile @ 390×844) captured with real rehearsal scores.
 - [x] Embedded visual walkthroughs in root `README.md` and screenshot catalog in `assets/screenshots/README.md`.
 - [x] Agent system initialized with tailored `AGENTS.md`, `.agents/acs.yaml`, rules, and upstream sync tracking.
-- [ ] Make repository public (`gh repo edit --visibility public`) when user is ready to share.
+- [x] Repository published as public (`https://github.com/MichalRedm/echoir-showcase`) with live demo homepage and description.
 
 ---
 
