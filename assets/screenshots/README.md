@@ -4,7 +4,7 @@ This directory hosts high-resolution UI captures and visual feature walkthroughs
 
 ---
 
-## 📸 Automated Screenshot Inventory
+## Automated Screenshot Inventory
 
 | Asset | Preview | Feature & User Flow | Key Highlights |
 | :--- | :---: | :--- | :--- |
@@ -20,6 +20,6 @@ This directory hosts high-resolution UI captures and visual feature walkthroughs
 
 ---
 
-## 🛠️ Automated Capture Protocol
+## Automated Capture Protocol
 
 All screenshots are autonomously captured using **Playwright** (`playwright-cli run-code`) with deterministic network idle states, loaded WebFonts (`Plus Jakarta Sans`), and calibrated device viewports.
