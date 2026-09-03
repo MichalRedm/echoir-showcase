@@ -20,6 +20,7 @@
 > - Production system architecture & domain modeling
 > - High-standard TypeScript craftsmanship and clean-code principles
 > - Solutions to real-world engineering hurdles (upload concurrency, multi-tenancy, resilient routing)
+> - **AI-Augmented Systems Engineering & Agent Governance**: How foundational hand-crafted architecture transitioned into autonomous AI agent orchestration to accelerate development ~7x while maintaining 100% type safety and zero architectural drift.
 > 
 > **For Hiring Managers & Technical Interviewers:**
 > A full, live IDE code walkthrough and demonstration of the private production repository is available upon request during interview stages. Please reach out via the [Contact](#-contact--author) section.
@@ -36,6 +37,9 @@ Traditional choirs and vocal ensembles struggle with fragmented rehearsal workfl
 - 📋 **Concert Programme Builder**: Drag-and-drop setlist reordering with timing estimations.
 - 🏢 **Multi-Choir Workspaces**: Seamless switching between multiple ensembles with isolated repertoires and role permissions.
 - 🔗 **Frictionless Onboarding**: Cryptographic invitation links and shareable join codes for instant member enrollment.
+
+### 🚀 Engineering Philosophy: Hand-Crafted Foundations, AI-Accelerated Scale
+The foundational architecture of **echoir**—including the strict 4-tier MVC/Repository layer isolation, native MongoDB concurrency guards, and custom React context workspace architecture—was designed and implemented completely by hand. With these structural patterns solidified, development transitioned to an **AI-Augmented Engineering** model using autonomous coding agents. By establishing strict agent governance guardrails (`.agents/`), machine-readable path triggers (`acs.yaml`), and mandatory local CI gates, feature delivery accelerated dramatically without compromising architectural integrity or type safety.
 
 ---
 
@@ -89,6 +93,7 @@ Explore detailed technical write-ups on specific architectural challenges solved
 | 📘 [**01. Strict 4-Tier Architecture & Layer Isolation**](./case-studies/01-strict-4-tier-architecture.md) | Backend Architecture | Repository Pattern, Zero-Leakage MongoDB Abstraction, Domain vs DB Models, Typed Error Hierarchy |
 | 📗 [**02. Multi-Choir Workspace Switching & Invitations**](./case-studies/02-multi-choir-context-invitations.md) | Multi-Tenancy & Security | Workspace Context Injection, Cryptographic Invite Tokens, Dynamic Tenant Isolation, Cache Invalidation |
 | 📙 [**03. Resilient Hierarchical Routing & Self-Healing Slugs**](./case-studies/03-resilient-hierarchical-routing.md) | Frontend & UX Architecture | Diacritic Transliteration, Longest-Prefix Slug Matching, Canonical Fallbacks, Self-Healing URLs |
+| 🤖 [**04. AI-Augmented Systems Engineering & Agent Governance**](./case-studies/04-agentic-engineering-governance.md) | AI Systems & Architecture | Progressive Disclosure, Deterministic Path Triggers, 5-Gate Operational Lifecycle, Upstream Provenance Tracking |
 
 ---
 
@@ -106,6 +111,10 @@ Curated, production-grade code extracts demonstrating coding standards, zero-`an
 - 📂 [**Auth & Invitation Security Pipeline**](./snippets/auth-and-invitation-pipeline/)
   - [`authMiddleware.ts`](./snippets/auth-and-invitation-pipeline/authMiddleware.ts): JWT verification, token extraction, and request context injection.
   - [`invitationService.ts`](./snippets/auth-and-invitation-pipeline/invitationService.ts): Cryptographic invitation token generation, entropy verification, and redemption logic.
+- 📂 [**AI Agent Governance Architecture**](./.agents/)
+  - [`AGENTS.md`](./AGENTS.md): Master entry point and deterministic Rule Routing Matrix (< 140 lines).
+  - [`acs.yaml`](./.agents/acs.yaml): Machine-readable Agent Configuration Schema with trigger paths and upstream provenance.
+  - [`sync-from-upstream/SKILL.md`](./.agents/skills/sync-from-upstream/SKILL.md): Autonomous workflow for inspecting upstream `echoir` commits and porting architectural changes.
 
 ---
 
@@ -131,6 +140,12 @@ Curated, production-grade code extracts demonstrating coding standards, zero-`an
 - **Linting & Formatting**: ESLint (TypeScript strict rules), Prettier
 - **Continuous Integration**: GitHub Actions automated linting, type-checking, and build verification pipelines
 - **Testing**: Vitest / Jest unit test suites for utilities, services, and repositories
+
+### AI-Augmented Engineering & Agent Governance
+- **Agent Orchestration**: Autonomous agent pairing governed via progressive disclosure (`AGENTS.md` $\rightarrow$ `.agents/rules/`)
+- **Trigger-Based Guardrails**: Machine-readable glob path routing (`acs.yaml`) activating targeted rules per file scope
+- **Quality Gates**: 5-phase operational lifecycle requiring interface inspection before coding, zero compiler suppression (`@ts-ignore`), and pre-push local CI verification
+- **Provenance Tracking**: Strict upstream commit hash tracking to synchronize architectural milestones from the private repository
 
 ---
 

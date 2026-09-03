@@ -87,6 +87,7 @@ Every task in this repository must progress sequentially through these 5 lifecyc
   - `01-strict-4-tier-architecture.md`: Repository pattern and tier isolation
   - `02-multi-choir-context-invitations.md`: Multi-tenant workspace switching & crypto invites
   - `03-resilient-hierarchical-routing.md`: Self-healing URL slug architecture
+  - `04-agentic-engineering-governance.md`: AI-augmented systems engineering & agent governance
 - `snippets/`: Sanitized, production-grade TypeScript extracts
 - `assets/screenshots/`: High-resolution UI captures and visual catalog
 - `.agents/`: Agent configuration, rules, context, and sync skills
