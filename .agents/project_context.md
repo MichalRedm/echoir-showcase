@@ -28,6 +28,7 @@ When upstream changes occur in `echoir`, use this matrix to identify which showc
 | `server/src/controllers/invitationController.ts`<br>`server/src/services/invitationService.ts` | `snippets/auth-and-invitation-pipeline/`<br>`case-studies/02-multi-choir-context-invitations.md` | Cryptographic invite tokens, member enrollment, security |
 | `client/src/context/ChoirContext/`<br>`client/src/hooks/queries/` | `snippets/react-query-and-hooks/` | Dynamic tenant workspace provider, optimistic repertoire cache |
 | `client/src/features/songs/`<br>`client/src/utils/slugUtils.ts` | `snippets/routing-and-slug-architecture/`<br>`case-studies/03-resilient-hierarchical-routing.md` | Dual-paradigm resilient ID-slug routing, workbench state preservation, diacritic handling |
+| `client/src/services/cache/`<br>`client/src/hooks/useCached*` | `snippets/persistent-media-cache/`<br>`case-studies/05-persistent-client-side-media-cache.md` | Multi-tier binary IndexedDB cache, Object URL ref counting, LRU eviction |
 | `client/src/features/**/*.{tsx,scss}` | `assets/screenshots/` | Live UI walkthrough captures generated via Playwright |
 | Monorepo root / `.agents/**` | `case-studies/04-agentic-engineering-governance.md` | AI agent governance, progressive disclosure, 5-gate lifecycle |
 
@@ -42,13 +43,14 @@ Provide a compelling, professional architectural portfolio for technical recruit
 - [x] Initial showcase repository initialization with MIT license and `.gitignore`.
 - [x] Root `README.md` with system overview, architecture diagram, and executive summary.
 - [x] Deep architectural specifications (`system_overview.md`, `data_models.md`).
-- [x] 4 comprehensive engineering case studies (`01`, `02`, `03`, `04`) with fully rendered Mermaid diagrams.
-- [x] 8 sanitized, production-grade TypeScript code samples across 4 architectural folders.
+- [x] 5 comprehensive engineering case studies (`01`, `02`, `03`, `04`, `05`) with fully rendered Mermaid diagrams.
+- [x] 10 sanitized, production-grade TypeScript code samples across 5 architectural folders.
 - [x] 9 high-resolution Retina screenshots (8 desktop @ 1920×1080 + 1 mobile @ 390×844) captured with real rehearsal scores.
 - [x] Embedded visual walkthroughs in root `README.md` and screenshot catalog in `assets/screenshots/README.md`.
 - [x] Agent system initialized with tailored `AGENTS.md`, `.agents/acs.yaml`, rules, and upstream sync tracking.
 - [x] Repository published as public (`https://github.com/MichalRedm/echoir-showcase`) with live demo homepage and description.
 - [x] Synchronized dual-paradigm hybrid ID-slug routing and query parameter canonicalization with upstream (PR #205, PR #206).
+- [x] Documented persistent client-side media caching, reference-counted Object URL lifecycles, and LRU eviction (PR #207).
 
 ---
 

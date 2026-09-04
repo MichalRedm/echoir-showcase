@@ -13,7 +13,8 @@ C4Container
     Person(user, "Choir Singer / Conductor", "Uses web browser to view sheets, listen to stems, and organize programmes.")
 
     System_Boundary(echoir_app, "echoir Platform") {
-        Container(spa, "Single-Page Application", "React 18, TypeScript, Vite, SCSS", "Delivers responsive UI, PDF reader, multi-track audio playback, and drag-and-drop programme ordering.")
+        Container(spa, "Single-Page Application", "React 18, TypeScript, Vite, SCSS", "Delivers responsive UI, score reader, multi-track audio playback, lookahead prefetching, and drag-and-drop programme ordering.")
+        ContainerDb(client_cache, "Client Media Cache", "IndexedDB / idb", "Stores binary sheet music page Blobs and vocal audio stems with dual-watermark LRU eviction and memory-safe Object URLs.")
         Container(api_gateway, "REST API Gateway & Controller Layer", "Node.js, Express, TypeScript", "Handles route dispatching, JWT authentication, multipart streaming, and payload validation.")
         Container(domain_services, "Domain Services Layer", "TypeScript", "Encapsulates business rules, transaction orchestration, permission checks, and audio processing.")
         Container(repo_layer, "Repository Layer", "MongoDB Native Driver", "Abstracts collection queries, atomic aggregations, and data projections.")
@@ -24,6 +25,7 @@ C4Container
     System_Ext(google_auth, "Google Identity Services", "OAuth 2.0 / OpenID Connect", "Third-party single sign-on authentication.")
 
     Rel(user, spa, "Interacts via HTTPS", "Web Browser")
+    Rel(spa, client_cache, "Reads/writes binary assets & manages Object URLs", "IndexedDB / Web APIs")
     Rel(spa, api_gateway, "Consumes REST API", "JSON / JWT Bearer")
     Rel(api_gateway, domain_services, "Invokes domain operations", "In-Process")
     Rel(domain_services, repo_layer, "Calls data access contracts", "In-Process (IChoirRepository, etc.)")
@@ -146,3 +148,4 @@ sequenceDiagram
 2. **Workspace Isolation**: Every choir-scoped operation validates that the requesting `userId` is an enrolled member with appropriate permissions (`admin`, `moderator`, `user`).
 3. **Cryptographic Invitation Tokens**: Invitation links use cryptographically random high-entropy strings, protected against enumeration and replay attacks.
 4. **Input Sanitization & Safe Slugs**: URL slugs are transliterated and stripped of non-alphanumeric characters to prevent injection and routing ambiguities.
+5. **Client Memory Safety & Browser Heap Protection**: Reference-counted Object URL lifecycles with deferred revocation prevent heap memory exhaustion and tab crashing during long rehearsal sessions.

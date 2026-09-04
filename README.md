@@ -111,6 +111,7 @@ In-depth technical write-ups examining specific architectural challenges, trade-
 | [**02. Multi-Choir Workspace Switching & Invitations**](./case-studies/02-multi-choir-context-invitations.md) | Multi-Tenancy & Security | Workspace Context Injection, Cryptographic Invite Tokens, Dynamic Tenant Isolation, Cache Invalidation |
 | [**03. Resilient Hierarchical Routing & Self-Healing Slugs**](./case-studies/03-resilient-hierarchical-routing.md) | Frontend & UX Architecture | Dual-Paradigm Path & Query Slugs, Multi-Pane Workbench State, Longest-Prefix Matching, Auto-Canonicalization |
 | [**04. AI-Augmented Systems Engineering & Agent Governance**](./case-studies/04-agentic-engineering-governance.md) | AI Systems & Architecture | Progressive Disclosure, Deterministic Path Triggers, 5-Gate Operational Lifecycle, Upstream Provenance Tracking |
+| [**05. Client-Side Persistent Media Caching & Memory Management**](./case-studies/05-persistent-client-side-media-cache.md) | Client Systems & Offline Storage | IndexedDB Blob Cache, Reference-Counted Object URLs, Lookahead Prefetching, Dual-Watermark LRU |
 
 ---
 
@@ -124,6 +125,9 @@ Curated, production-grade code extracts demonstrating coding standards, zero-`an
   - [`ChoirService.ts`](./snippets/backend-repository-pattern/ChoirService.ts): Business validation, transaction orchestration, and error handling.
 - **Routing & Slug Architecture** (`snippets/routing-and-slug-architecture/`)
   - [`slugUtils.ts`](./snippets/routing-and-slug-architecture/slugUtils.ts): Multilingual diacritic normalization, collision-resistant ID-slug resolution, and canonical query parameter formatting.
+- **Persistent Client-Side Media Cache** (`snippets/persistent-media-cache/`)
+  - [`objectUrlManager.ts`](./snippets/persistent-media-cache/objectUrlManager.ts): Reference-counted browser Object URL lifecycle registry with deferred grace-period revocation preventing memory leaks.
+  - [`fileCacheService.ts`](./snippets/persistent-media-cache/fileCacheService.ts): Multi-tier binary caching engine with in-flight deduplication, deterministic version checks, and LRU pruning.
 - **React Query & Custom Hooks** (`snippets/react-query-and-hooks/`)
   - [`useChoirWorkspace.ts`](./snippets/react-query-and-hooks/useChoirWorkspace.ts): Workspace state provider and dynamic context switching.
   - [`useOptimisticRepertoire.ts`](./snippets/react-query-and-hooks/useOptimisticRepertoire.ts): TanStack Query cache manipulation and optimistic updates.
@@ -142,6 +146,7 @@ Curated, production-grade code extracts demonstrating coding standards, zero-`an
 ### Frontend (`client/`)
 - **Core Framework**: React 18, TypeScript (Strict Mode), Vite
 - **Data Fetching & Cache**: `@tanstack/react-query` (declarative key factories and cache invalidation contracts)
+- **Offline Storage & Binary Caching**: IndexedDB (`idb`), native `Blob` storage, and custom reference-counted Object URL lifecycle management
 - **Routing**: `react-router-dom` v6 with dynamic hierarchical nested routing
 - **Interactivity & UI**: `@dnd-kit/core` & `@dnd-kit/sortable` (drag-and-drop setlists), `framer-motion`
 - **Styling**: Modular SCSS with design tokens (tonal dark mode, accessible color scales, z-index scale)
