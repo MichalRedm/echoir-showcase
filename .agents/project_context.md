@@ -12,10 +12,10 @@ This showcase repository is a curated architectural proxy for the private produc
 | Metadata Field | Value | Notes |
 | :--- | :--- | :--- |
 | **Parent Repository** | `MichalRedm/echoir` | Private production repository |
-| **Last Synced Commit Hash** | `e84987df97478e1143405b99dcb06492ec4d3519` | SHA-1 of latest synchronized upstream commit |
-| **Commit Timestamp** | `2026-09-03 14:47:09 +0200` | Timestamp of last synchronized upstream commit |
-| **Commit Subject** | `Merge pull request #203 from MichalRedm/fix/pass-choir-id-to-create-song` | Fix choirId propagation in client song creation |
-| **Synchronization Status** | **100% In Parity** | All case studies, snippets, and screenshots match this commit |
+| **Last Synced Commit Hash** | `b1aa04bcf7f05972018f97b21096abe54aaf0152` | SHA-1 of latest synchronized upstream commit |
+| **Commit Timestamp** | `2026-09-04 15:21:44 +0200` | Timestamp of last synchronized upstream commit |
+| **Commit Subject** | `refactor(songs): make SongBox close button fully vanishing when controls are idle` | Upstream HEAD commit |
+| **Synchronization Status** | **100% In Parity** | All case studies, snippets, and routing architectures match upstream |
 
 ### Subsystem Mapping Matrix
 
@@ -27,7 +27,7 @@ When upstream changes occur in `echoir`, use this matrix to identify which showc
 | `server/src/services/` | `case-studies/01-strict-4-tier-architecture.md` | Business validation, transaction orchestration, tier isolation |
 | `server/src/controllers/invitationController.ts`<br>`server/src/services/invitationService.ts` | `snippets/auth-and-invitation-pipeline/`<br>`case-studies/02-multi-choir-context-invitations.md` | Cryptographic invite tokens, member enrollment, security |
 | `client/src/context/ChoirContext/`<br>`client/src/hooks/queries/` | `snippets/react-query-and-hooks/` | Dynamic tenant workspace provider, optimistic repertoire cache |
-| `client/src/features/songs/`<br>`client/src/utils/slugUtils.ts` | `case-studies/03-resilient-hierarchical-routing.md` | Resilient self-healing ID-slug routing and diacritic handling |
+| `client/src/features/songs/`<br>`client/src/utils/slugUtils.ts` | `snippets/routing-and-slug-architecture/`<br>`case-studies/03-resilient-hierarchical-routing.md` | Dual-paradigm resilient ID-slug routing, workbench state preservation, diacritic handling |
 | `client/src/features/**/*.{tsx,scss}` | `assets/screenshots/` | Live UI walkthrough captures generated via Playwright |
 | Monorepo root / `.agents/**` | `case-studies/04-agentic-engineering-governance.md` | AI agent governance, progressive disclosure, 5-gate lifecycle |
 
@@ -43,11 +43,12 @@ Provide a compelling, professional architectural portfolio for technical recruit
 - [x] Root `README.md` with system overview, architecture diagram, and executive summary.
 - [x] Deep architectural specifications (`system_overview.md`, `data_models.md`).
 - [x] 4 comprehensive engineering case studies (`01`, `02`, `03`, `04`) with fully rendered Mermaid diagrams.
-- [x] 7 sanitized, production-grade TypeScript code samples across 3 architectural folders.
+- [x] 8 sanitized, production-grade TypeScript code samples across 4 architectural folders.
 - [x] 9 high-resolution Retina screenshots (8 desktop @ 1920×1080 + 1 mobile @ 390×844) captured with real rehearsal scores.
 - [x] Embedded visual walkthroughs in root `README.md` and screenshot catalog in `assets/screenshots/README.md`.
 - [x] Agent system initialized with tailored `AGENTS.md`, `.agents/acs.yaml`, rules, and upstream sync tracking.
 - [x] Repository published as public (`https://github.com/MichalRedm/echoir-showcase`) with live demo homepage and description.
+- [x] Synchronized dual-paradigm hybrid ID-slug routing and query parameter canonicalization with upstream (PR #205, PR #206).
 
 ---
 

@@ -6,8 +6,8 @@ entrypoint: "../AGENTS.md"
 upstream:
   repository: "MichalRedm/echoir"
   url: "https://github.com/MichalRedm/echoir"
-  last_synced_commit: "e84987df97478e1143405b99dcb06492ec4d3519"
-  last_synced_date: "2026-09-03T14:47:09+02:00"
+  last_synced_commit: "b1aa04bcf7f05972018f97b21096abe54aaf0152"
+  last_synced_date: "2026-09-04T15:21:44+02:00"
 
 layers:
   rules:
