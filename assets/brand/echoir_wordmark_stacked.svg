@@ -1,14 +1,14 @@
-<svg width="556" height="240" viewBox="0 0 556 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="230" viewBox="0 0 400 230" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="wm_tagline_grad" x1="240" y1="168" x2="535" y2="168" gradientUnits="userSpaceOnUse">
+    <linearGradient id="wm_stack_tagline_grad" x1="80" y1="205" x2="320" y2="205" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#38bdf8"/>
       <stop offset="100%" stop-color="#818cf8"/>
     </linearGradient>
   </defs>
 
-  <!-- Logomark (192×192 at offset 24, 24) -->
-  <g transform="translate(24, 24) scale(0.375)">
-    <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Centered Logomark (108×108 at offset 146, 12) -->
+  <g transform="translate(146, 10)">
+    <svg width="108" height="108" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="brand_bg_grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
@@ -96,13 +96,15 @@
 </svg>
   </g>
 
-  <!-- Typography -->
-  <text x="240" y="132"
-        fill="#0f172a"
+  <!-- Centered Typography -->
+  <text x="200" y="172"
+        text-anchor="middle"
+        fill="#ffffff"
         font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
-        font-size="78" font-weight="800" letter-spacing="-1.5">Echoir</text>
-  <text x="242" y="172"
-        fill="url(#wm_tagline_grad)"
+        font-size="50" font-weight="800" letter-spacing="-1">Echoir</text>
+  <text x="200" y="206"
+        text-anchor="middle"
+        fill="url(#wm_stack_tagline_grad)"
         font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
-        font-size="14.5" font-weight="700" letter-spacing="3.8">DIGITAL CHORAL SONGBOOK</text>
+        font-size="11.5" font-weight="700" letter-spacing="3.2">DIGITAL CHORAL SONGBOOK</text>
 </svg>

@@ -1,6 +1,6 @@
-<svg width="800" height="240" viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="556" height="240" viewBox="0 0 556 240" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="wm_tagline_grad" x1="240" y1="168" x2="680" y2="168" gradientUnits="userSpaceOnUse">
+    <linearGradient id="wm_tagline_grad" x1="240" y1="168" x2="535" y2="168" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#38bdf8"/>
       <stop offset="100%" stop-color="#818cf8"/>
     </linearGradient>

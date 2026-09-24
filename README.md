@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/brand/echoir_wordmark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/brand/echoir_wordmark_light.svg">
-    <img src="./assets/brand/echoir_wordmark.svg" alt="Echoir — Digital Choral Songbook" width="460" />
+    <img src="./assets/brand/echoir_wordmark.svg" alt="Echoir — Digital Choral Songbook" width="380" />
   </picture>
 </p>
 

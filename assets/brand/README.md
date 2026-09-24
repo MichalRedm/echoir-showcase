@@ -30,10 +30,12 @@ The Echoir brand mark synthesizes two foundational choral concepts into a single
 
 | Asset File | Format | Dimensions | Description & Optimal Usage |
 | :--- | :---: | :---: | :--- |
-| [`echoir_wordmark.svg`](./echoir_wordmark.svg) | SVG | 800×240 | **Primary Horizontal Lockup (Dark)**: App icon + white typography + English tagline (`DIGITAL CHORAL SONGBOOK`). |
-| [`echoir_wordmark_light.svg`](./echoir_wordmark_light.svg) | SVG | 800×240 | **Primary Horizontal Lockup (Light)**: App icon + dark slate typography + English tagline. |
-| [`echoir_wordmark.png`](./echoir_wordmark.png) | PNG | 800×240 | Raster render of dark horizontal lockup with alpha transparency. |
-| [`echoir_wordmark_light.png`](./echoir_wordmark_light.png) | PNG | 800×240 | Raster render of light horizontal lockup with alpha transparency. |
+| [`echoir_wordmark.svg`](./echoir_wordmark.svg) | SVG | 556×240 | **Symmetrical Horizontal Lockup (Dark)**: App icon + white typography + English tagline (`DIGITAL CHORAL SONGBOOK`), cropped with 24px balanced padding. |
+| [`echoir_wordmark_light.svg`](./echoir_wordmark_light.svg) | SVG | 556×240 | **Symmetrical Horizontal Lockup (Light)**: App icon + dark slate typography + English tagline. |
+| [`echoir_wordmark_stacked.svg`](./echoir_wordmark_stacked.svg) | SVG | 400×230 | **Centered Stacked Lockup (Dark)**: App icon centered on top with typography and tagline below (100% vertical axis symmetry). |
+| [`echoir_wordmark_stacked_light.svg`](./echoir_wordmark_stacked_light.svg) | SVG | 400×230 | **Centered Stacked Lockup (Light)**: Centered stacked lockup for light-mode READMEs. |
+| [`echoir_wordmark.png`](./echoir_wordmark.png) | PNG | 556×240 | Raster render of dark horizontal lockup with alpha transparency. |
+| [`echoir_wordmark_light.png`](./echoir_wordmark_light.png) | PNG | 556×240 | Raster render of light horizontal lockup with alpha transparency. |
 | [`echoir_wordmark_pl.svg`](./echoir_wordmark_pl.svg) | SVG | 800×240 | Production horizontal lockup with Polish tagline (`CYFROWY ŚPIEWNIK CHÓRALNY`). |
 | [`echoir_app_icon.png`](./echoir_app_icon.png) | PNG | 512×512 | High-DPI squircle app icon for mobile launchers, PWA manifests, and social avatars. |
 | [`echoir_app_icon.svg`](./echoir_app_icon.svg) | SVG | 512×512 | Vector source for squircle app icon with 112px border radius. |
