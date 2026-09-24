@@ -1,14 +1,34 @@
-# echoir — System Architecture & Engineering Case Studies
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/brand/echoir_wordmark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/brand/echoir_wordmark_light.svg">
+    <img src="./assets/brand/echoir_wordmark.svg" alt="Echoir — Digital Choral Songbook" width="460" />
+  </picture>
+</p>
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-echoir.onrender.com-00c7b7?logo=render&logoColor=white)](https://echoir.onrender.com)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/Frontend-React%2018%20%7C%20Vite-61dafb?logo=react&logoColor=black)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![MongoDB](https://img.shields.io/badge/Database-MongoDB%20Native%20Driver-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
-[![Architecture](https://img.shields.io/badge/Architecture-4--Tier%20MVC%2FRepository-orange)](#system-architecture)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+<p align="center">
+  <strong>The digital songbook and collaborative workspace for choirs, vocal ensembles, and conductors.</strong><br>
+  Digitized sheet music scores, synchronized multi-track voice part stems, and real-time concert setlist orchestration.
+</p>
 
-**echoir** is an online digital songbook and collaborative rehearsal platform built for choirs, vocal ensembles, and conductors. It organizes digitized sheet music scores, multi-track voice part audio recordings, personal annotations, and concert setlists into a unified, accessible workspace.
+<p align="center">
+  <a href="https://echoir.onrender.com"><img src="https://img.shields.io/badge/Live%20Demo-echoir.onrender.com-10b981?style=flat&logo=render&logoColor=white" alt="Live Demo" /></a>
+  <a href="#system-architecture"><img src="https://img.shields.io/badge/Architecture-4--Tier%20MVC%2FRepository-6366f1?style=flat" alt="Architecture" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.x%20(Strict)-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/Frontend-React%2018%20%7C%20Vite-38bdf8?style=flat&logo=react&logoColor=black" alt="React" /></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-334155?style=flat&logo=nodedotjs&logoColor=white" alt="Node" /></a>
+  <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/Database-MongoDB%20Native-059669?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-1e1b4b?style=flat" alt="License" /></a>
+</p>
+
+<p align="center">
+  <a href="https://echoir.onrender.com"><b>Explore Live Demo</b></a> •
+  <a href="#system-architecture">System Architecture</a> •
+  <a href="#brand-identity--design-system">Brand Identity</a> •
+  <a href="#engineering-case-studies">Case Studies</a> •
+  <a href="#production-code-extracts">Code Extracts</a> •
+  <a href="#application-interface--visual-showcase">UI Showcase</a>
+</p>
 
 ---
 
@@ -101,6 +121,29 @@ For detailed sequence diagrams and container specifications, see the [System Ove
 
 ---
 
+## Brand Identity & Design System
+
+Echoir's visual identity, **"The Singing Score"**, bridges traditional choral music notation and modern digital design tokens into an engineered, cohesive visual language:
+
+- **Emblem Architecture**: An open choral songbook with engraved staff lines centered around a classical treble clef. The clef's vertical spine serves as the physical binding hinge of the score.
+- **Harmonic Voice-Part Spectrum**: The continuous emerald-to-cyan-to-indigo gradient directly mirrors the vocal ranges of a four-part choir (SATB):
+  - **Soprano (`#34d399` / `#10b981`)**: The upper crown of the clef, used across active playback waveforms, live audio stems, and affirmative state indicators.
+  - **Alto (`#38bdf8` / `#06b6d4`)**: The middle clef loop, applied to secondary accents, active navigation pills, and rehearsal controls.
+  - **Tenor (`#6366f1` / `#4f46e5`)**: The clef root and notehead, providing the primary structural brand base.
+  - **Bass (`#1e1b4b` / `#08070d`)**: The deep score binding pages, anchoring tonal dark surfaces and elevated workspace cards.
+- **Two-Tier Icon Architecture**:
+  - **Tier 1 (Browser Tabs, 16–48px)**: To eliminate the blurry container effect at low resolutions, the dark squircle is stripped, and the mark is scaled edge-to-edge with boosted optical weight.
+  - **Tier 2 (High-DPI Launchers, 180–512px)**: Dark squircle container with border glow preserved for PWA launchers and Apple touch icons.
+- **Single Source of Truth (`logoGeometry.json`)**: All brand marks, vector assets, and the in-app `<LogoIcon />` component are generated deterministically from a single JSON coordinate definition via headless Chromium rendering.
+
+<p align="center">
+  <img src="./assets/brand/echoir_official_brand_showcase.png" alt="Echoir Official Brand Identity & Design System" width="100%" />
+</p>
+
+*(For the complete vector asset inventory and token specifications, see the [Brand Asset Catalog](./assets/brand/README.md).)*
+
+---
+
 ## Engineering Case Studies
 
 In-depth technical write-ups examining specific architectural challenges, trade-offs, and failure modes solved during development:
@@ -134,6 +177,9 @@ Curated, production-grade code extracts demonstrating coding standards, zero-`an
 - **Auth & Invitation Security Pipeline** (`snippets/auth-and-invitation-pipeline/`)
   - [`authMiddleware.ts`](./snippets/auth-and-invitation-pipeline/authMiddleware.ts): JWT verification, token extraction, and request context injection.
   - [`invitationService.ts`](./snippets/auth-and-invitation-pipeline/invitationService.ts): Cryptographic invitation token generation, entropy verification, and redemption logic.
+- **Design System & Scalable Vector Geometry** (`snippets/ui-design-system/`)
+  - [`LogoIcon.tsx`](./snippets/ui-design-system/LogoIcon.tsx): Multi-variant React 18 SVG component supporting transparent mark, dark squircle, and light-mode variants with dynamic `useId` gradient isolation.
+  - [`logoGeometry.json`](./snippets/ui-design-system/logoGeometry.json): Decoupled SVG path coordinates and stroke definitions serving as the single source of truth for both browser rendering and CLI build scripts.
 - **AI Agent Governance Framework** (`.agents/`)
   - [`AGENTS.md`](./AGENTS.md): Master entry point and deterministic Rule Routing Matrix (< 140 lines).
   - [`acs.yaml`](./.agents/acs.yaml): Machine-readable Agent Configuration Schema with trigger paths and upstream provenance.
@@ -149,7 +195,7 @@ Curated, production-grade code extracts demonstrating coding standards, zero-`an
 - **Offline Storage & Binary Caching**: IndexedDB (`idb`), native `Blob` storage, and custom reference-counted Object URL lifecycle management
 - **Routing**: `react-router-dom` v6 with dynamic hierarchical nested routing
 - **Interactivity & UI**: `@dnd-kit/core` & `@dnd-kit/sortable` (drag-and-drop setlists), `framer-motion`
-- **Styling**: Modular SCSS with design tokens (tonal dark mode, accessible color scales, z-index scale)
+- **Styling & Design System**: Modular SCSS with design tokens (SATB harmonic voice scales, tonal dark mode surfaces, accessible contrast compliance) and decoupled SVG geometry
 - **Document & Media Handling**: `pdfjs-dist`, `jspdf`, Web Audio API
 
 ### Backend (`server/`)

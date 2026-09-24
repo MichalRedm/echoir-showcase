@@ -12,10 +12,10 @@ This showcase repository is a curated architectural proxy for the private produc
 | Metadata Field | Value | Notes |
 | :--- | :--- | :--- |
 | **Parent Repository** | `MichalRedm/echoir` | Private production repository |
-| **Last Synced Commit Hash** | `b1aa04bcf7f05972018f97b21096abe54aaf0152` | SHA-1 of latest synchronized upstream commit |
-| **Commit Timestamp** | `2026-09-04 15:21:44 +0200` | Timestamp of last synchronized upstream commit |
-| **Commit Subject** | `refactor(songs): make SongBox close button fully vanishing when controls are idle` | Upstream HEAD commit |
-| **Synchronization Status** | **100% In Parity** | All case studies, snippets, and routing architectures match upstream |
+| **Last Synced Commit Hash** | `ad1285137b57526b2853fec15068a4c06cdf1c0a` | SHA-1 of latest synchronized upstream commit |
+| **Commit Timestamp** | `2026-09-24 17:07:59 +0200` | Timestamp of last synchronized upstream commit |
+| **Commit Subject** | `Merge pull request #235 from MichalRedm/fix/messenger-seo-og-preview` | Upstream HEAD commit (PR #234 brand identity, PR #235 SEO) |
+| **Synchronization Status** | **100% In Parity** | All case studies, brand identity kit, snippets, and routing architectures match upstream |
 
 ### Subsystem Mapping Matrix
 
@@ -29,6 +29,7 @@ When upstream changes occur in `echoir`, use this matrix to identify which showc
 | `client/src/context/ChoirContext/`<br>`client/src/hooks/queries/` | `snippets/react-query-and-hooks/` | Dynamic tenant workspace provider, optimistic repertoire cache |
 | `client/src/features/songs/`<br>`client/src/utils/slugUtils.ts` | `snippets/routing-and-slug-architecture/`<br>`case-studies/03-resilient-hierarchical-routing.md` | Dual-paradigm resilient ID-slug routing, workbench state preservation, diacritic handling |
 | `client/src/services/cache/`<br>`client/src/hooks/useCached*` | `snippets/persistent-media-cache/`<br>`case-studies/05-persistent-client-side-media-cache.md` | Multi-tier binary IndexedDB cache, Object URL ref counting, LRU eviction |
+| `client/public/branding/`<br>`client/src/components/ui/LogoIcon.tsx`<br>`client/src/components/ui/logoGeometry.json` | `assets/brand/`<br>`snippets/ui-design-system/` | Official brand identity ("The Singing Score"), two-tier icon strategy, vector geometry SSOT |
 | `client/src/features/**/*.{tsx,scss}` | `assets/screenshots/` | Live UI walkthrough captures generated via Playwright |
 | Monorepo root / `.agents/**` | `case-studies/04-agentic-engineering-governance.md` | AI agent governance, progressive disclosure, 5-gate lifecycle |
 
@@ -44,8 +45,9 @@ Provide a compelling, professional architectural portfolio for technical recruit
 - [x] Root `README.md` with system overview, architecture diagram, and executive summary.
 - [x] Deep architectural specifications (`system_overview.md`, `data_models.md`).
 - [x] 5 comprehensive engineering case studies (`01`, `02`, `03`, `04`, `05`) with fully rendered Mermaid diagrams.
-- [x] 10 sanitized, production-grade TypeScript code samples across 5 architectural folders.
+- [x] 12 sanitized, production-grade TypeScript code samples across 6 architectural folders (including design system SSOT).
 - [x] 9 high-resolution Retina screenshots (8 desktop @ 1920×1080 + 1 mobile @ 390×844) captured with real rehearsal scores.
+- [x] Official brand identity kit ("The Singing Score") integrated into `README.md` (adaptive wordmark hero, SATB voice palette, design system section, and `assets/brand/` catalog).
 - [x] Embedded visual walkthroughs in root `README.md` and screenshot catalog in `assets/screenshots/README.md`.
 - [x] Agent system initialized with tailored `AGENTS.md`, `.agents/acs.yaml`, rules, and upstream sync tracking.
 - [x] Repository published as public (`https://github.com/MichalRedm/echoir-showcase`) with live demo homepage and description.

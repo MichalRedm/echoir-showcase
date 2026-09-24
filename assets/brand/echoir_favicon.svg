@@ -1,0 +1,78 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    
+    <!-- Book Page Left -->
+    <linearGradient id="sfav_book_l" x1="110" y1="160" x2="256" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+
+    <!-- Book Page Right -->
+    <linearGradient id="sfav_book_r" x1="256" y1="160" x2="402" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#3730a3"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <!-- Clef: Green → Cyan → Indigo spectrum -->
+    <linearGradient id="sfav_clef_grad" x1="256" y1="78" x2="256" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#34d399"/>
+      <stop offset="28%"  stop-color="#10b981"/>
+      <stop offset="68%"  stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+
+    <filter id="sfav_shadow" x="60" y="30" width="380" height="440" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(256, 256) scale(1.46) translate(-256, -240)">
+  <!-- Left Open Book Page -->
+  <path d="M 248 168 C 192 136, 134 148, 108 176 C 108 252, 118 318, 134 352 C 182 324, 222 320, 248 344 Z"
+        fill="url(#sfav_book_l)" stroke="rgba(255,255,255,0.25)" stroke-width="3"/>
+
+  <!-- Right Open Book Page -->
+  <path d="M 264 168 C 320 136, 378 148, 404 176 C 404 252, 394 318, 378 352 C 330 324, 290 320, 264 344 Z"
+        fill="url(#sfav_book_r)" stroke="rgba(255,255,255,0.25)" stroke-width="3"/>
+
+  <!-- Left Staves -->
+  <path d="M 136 224 C 174 208, 208 214, 238 228" stroke="rgba(255,255,255,0.5)" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+  <path d="M 142 258 C 178 244, 212 248, 238 262" stroke="rgba(255,255,255,0.5)" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+  <path d="M 150 292 C 182 280, 214 284, 238 298" stroke="rgba(255,255,255,0.5)" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Right Staves -->
+  <path d="M 274 228 C 304 214, 338 208, 376 224" stroke="rgba(255,255,255,0.5)" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+  <path d="M 274 262 C 300 248, 334 244, 370 258" stroke="rgba(255,255,255,0.5)" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+  <path d="M 274 298 C 298 284, 330 280, 362 292" stroke="rgba(255,255,255,0.5)" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Treble Clef Emblem -->
+  <g filter="url(#sfav_shadow)">
+    <!-- 1. Central Vertical Spine -->
+    <path d="M 256 82 L 256 356"
+          stroke="url(#sfav_clef_grad)" stroke-width="19" stroke-linecap="round"/>
+
+    <!-- 2. Classical Sweeping Hook -->
+    <path d="M 256 356 C 256 384 246 398 228 398 C 210 398 197.357 377.269 205.357 357.269"
+          stroke="url(#sfav_clef_grad)" stroke-width="19"
+          stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- 3. Tilted Elliptical Notehead -->
+    <ellipse cx="218" cy="356"
+             rx="23" ry="17"
+             transform="rotate(-18 218 356)"
+             fill="url(#sfav_clef_grad)"/>
+
+    <!-- 4. Top Crown Loop -->
+    <path d="M 256 82 C 278 82, 292 98, 290 122 C 288 146, 274 160, 256 166"
+          stroke="url(#sfav_clef_grad)" stroke-width="19" stroke-linecap="round" fill="none"/>
+
+    <!-- 5. Left Outer Belly -->
+    <path d="M 256 166 C 228 176 195.758 204.041 194 242 C 192.336 277.922 211.694 314.894 253.254 316.85"
+          stroke="url(#sfav_clef_grad)" stroke-width="19" stroke-linecap="round" fill="none"/>
+
+    <!-- 6. Sculpture Tapered Crest Center Loop with Pike -->
+    <path d="M 246.72 326.134 C 304.464 331.635 326.617 297.884 325.692 265.845 C 324.589 227.651 298.28 205.895 270.28 203.895 C 252.28 202.895 230.454 210.93 224.28 229.895 C 222.897 234.143 220.987 245.135 225.812 255.172 C 227.958 248.164 227.857 244.64 236.845 231.874 C 245.833 219.108 253.541 223.965 256.409 222.428 C 259.277 220.891 265.156 219.895 271.156 219.895 C 289.156 219.895 307.013 237.912 306.972 265.983 C 306.933 292.705 281.607 315.007 246.525 306.662 L 246.72 326.134 Z"
+          fill="url(#sfav_clef_grad)"/>
+  </g>
+  </g>
+</svg>
